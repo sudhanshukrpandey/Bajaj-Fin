@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 20px;
+}
+
+.api-group {
+  position: relative; /* Positioning for the floating label */
+  width: 60%; /* Width of the input container */
+  margin-bottom: 10px; /* Space between input and label */
+}
+
+.api-group input {
+  width: 100%; /* Full width of container */
+  padding: 10px; /* Padding for input */
+  font-size: 16px; /* Font size for input */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.api-group label {
+  position: absolute; /* Floating effect */
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  font-size: 16px; /* Font size for label */
+  color: #aaa; /* Light color for label */
+  transition: 0.2s ease all; /* Smooth transition for floating effect */
+  pointer-events: none; /* Prevent label from blocking input */
+}
+
+.api-group input:focus + label,
+.api-group input:not(:placeholder-shown) + label {
+  top: -10px; /* Move label up */
+  left: 10px; /* Adjust as needed */
+  font-size: 12px; /* Smaller font size when floating */
+  color: #0056b3; /* Color when floating */
+}
+
+.submit-button {
+  width: 60%; /* Same width as input */
+  padding: 10px; /* Same padding as input */
+  font-size: 16px; /* Same font size as input */
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #003f88;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.response-section {
+  margin-top: 20px;
+  text-align: left;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.multi-select {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.filtered-response h3 {
+  margin: 10px 0;
+}
